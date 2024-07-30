@@ -19,6 +19,17 @@ def tapcode(message):
 	return translated
 
 
+def my_datetime():
+	import time
+	my_date = time.strftime('%A %B %d %Y')
+	my_time = time.strftime('%I:%M%p')
+	return my_date, my_time
+
+
+d = my_datetime()
+print(f"Today is: {d[0]}, {d[1]}")
+
+
 a = tapcode(".. ...  .. ....  *  ..... ....  ... ....  .... .....  *  .... ...  .. ....  ... .  ... .  ..... ....")
 print(a.title())
 
